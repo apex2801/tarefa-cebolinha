@@ -6,12 +6,16 @@ namespace tarefa_cebolinha
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("talefa cebolinha");
-            Console.WriteLine("--------------------");
-            Console.WriteLine("chame meu amigos pala joga video game aqui em casa mas so tinha um contlole");
-            Console.WriteLine("ai fomo na casa de outlo amigo meu pala pega outlo contlole");
-        
-        
+            string frase;
+            
+            Console.WriteLine("---------");
+            Console.WriteLine("Cebolinha");
+            Console.WriteLine("---------");
+            
+            Console.Write("Digite uma frase: ");
+            frase = Console.ReadLine();
+            frase = frase.Replace("rr","l").Replace("rR","l").Replace("RR","L").Replace("Rr","L").Replace("r","l").Replace("R","L");
+            Console.WriteLine(frase);        
         }
     }
 }
